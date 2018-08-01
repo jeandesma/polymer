@@ -109,7 +109,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         if (path == 'items') {
           // Case 1 - items array changed, so diff against previous array and
           // deselect any removed items and adjust selected indices
-          let newItems = itemsInfo.base || [];
+          let newItems = itemsInfo.base;
           let lastItems = this.__lastItems;
           let lastMulti = this.__lastMulti;
           if (multi !== lastMulti) {
